@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work {
+  background-color: #fbfbfb;
+}
+
+h3 {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+
+.cards li {
+  flex-basis: 30%;
+}
+
+.cards li:nth-of-type(3) figure img {
+  object-position: left;
+}
+
+figure {
+  width: 100%;
+  height: 250px;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+}
+
+h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.project-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link p {
+  font-size: 13px;
+}
+
+.view-code,
+.view-project {
+  display: flex;
+  gap: 12px;
+}
+
+.icon,
+.contact-icon a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.view-code-icon::before,
+.live-demo-icon::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-indent: 0;
+}
+
+.view-code-icon::before {
+  content: "\f09b";
+}
+
+.live-demo-icon::before {
+  content: "\f08e";
+  font-size: 13px;
+}
+
+.info {
+  padding: 20px 10px;
+  background: #fff;
+}
+
+.cards li p:hover {
+  transform: scale(1.1);
+}
+
+.cards li a:hover {
+  color: #0794ff;
+  transform: scale(1.2);
+}
+
+.cards li {
+  box-shadow: 0px 8px 6px -6px rgba(235, 234, 242, 0.58);
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-property: transform, box-shadow;
+}
+
+.cards li:hover {
+  transform: translateY(-8px);
+  box-shadow: 15px 8px 6px -6px rgba(235, 234, 242, 0.58);
+}
+
+/*contact section start*/
+#contact,
+#contact .wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+#contact {
+  background: linear-gradient(
+    198deg,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(7, 148, 255, 1) 90%
+  );
+}
+
+.clay-card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 1);
+
+  border-radius: 20px;
+
+  box-shadow: 0px 35px 68px 0px rgba(120, 157, 246, 0.5),
+    inset 0px -10px 16px 0px rgba(120, 157, 246, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  text-align: center;
+  padding: 50px;
+}
+
+h5 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.clay-card span,
+.social-links li a {
+  font-size: 13px;
+}
+
+.contact-icon a {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.contact-icon a::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-indent: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.git a::before {
+  content: "\f09b";
+}
+
+.linked-in a::before {
+  content: "\f08c";
+}
+
+.fcc a::before {
+  content: "\f2c5";
+}
+
+.linked-in a::before {
+  content: "\f08c";
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.icon-container p {
+  font-size: 17px;
+}
+
+.icon-container span {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: #000;
+}
+
+.icon-container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-icon::before,
+.phone-icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "FontAwesome";
+}
+
+.mail-icon::before {
+  content: "\f003";
+}
+
+.phone-icon::before {
+  content: "\f095";
+}
+
+.contact-icon a:hover {
+  background-color: #40a2ff;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .cards li {
+    flex-basis: 45%;
+  }
+
+  .cards li figure,
+  .cards li figure img {
+    height: 300px;
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .cards li figure,
+  .cards li figure img {
+    height: 250px;
+  }
+
+  .view-code,
+  .view-project {
+    gap: 5px;
+  }
+
+  .project-link p {
+    font-size: 13px;
+  }
+}
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  .cards li {
+    flex-basis: 100%;
+  }
+
+  .cards li figure,
+  .cards li figure img {
+    height: 350px;
+  }
+}
